@@ -18,6 +18,11 @@
       referrerpolicy="no-referrer"
     />
     <title>Greenie Web</title>
+    <link
+      rel="shortcut icon"
+      href="./Images/flower-pot.png"
+      type="image/x-icon"
+    />
   </head>
 
   <body class="">
@@ -33,11 +38,12 @@
           <a href="">ABOUT</a>
           <a href="">WHY US</a>
           <a href="">HOW IT WORKS</a>
-          <button
-            class="border p-1 w-[160px] cursor-pointer hover:bg-green-900 hover:text-white"
+          <a
+            href="/requestDemo.html"
+            class="border p-1 w-[160px] cursor-pointer hover:bg-green-900 hover:text-white text-center"
           >
             REQUEST DEMO
-          </button>
+          </a>
         </div>
         <div class="lg:hidden" id="menuBtn">
           <i class="bx bx-menu border p-2 text-center rounded-[5px]"></i>
@@ -156,7 +162,7 @@
     </section>
 
     <!-- Image Compression -->
-    <section>
+    <section class="max-w-[90vw] lg:max-w-[75vw] mx-auto">
       <div class="text-center mt-10">
         <h2 class="font-bold text-3xl mb-6">IMAGE COMPRESSION</h2>
         <p>Greenifying your media by compressing your images</p>
@@ -170,7 +176,7 @@
             <img
               src="Images/Greenie pancake one.jpg"
               alt="pancake Image"
-              class="w-[260px] h-auto rounded-[15px]"
+              class="rounded-[15px]"
             />
           </div>
           <p class="mt-5 font-bold">
@@ -202,7 +208,7 @@
             <img
               src="Images/Greenie pancake two.jpg"
               alt="pancake Image"
-              class="w-[260px] h-auto rounded-[15px]"
+              class="rounded-[15px]"
             />
           </div>
           <p class="mt-5 font-bold">
@@ -220,7 +226,7 @@
     </section>
 
     <!-- Frame Rate -->
-    <section>
+    <section class="max-w-[90vw] lg:max-w-[75vw] mx-auto">
       <div class="text-center mt-10">
         <h2 class="font-bold text-3xl mb-6">FRAME RATE</h2>
         <p>Greenifying your media by changing your frame rate</p>
@@ -282,7 +288,7 @@
     </section>
 
     <!-- BackEnd -->
-    <section>
+    <section class="max-w-[90vw] lg:max-w-[75vw] mx-auto">
       <div class="text-center">
         <h2 class="mt-20 font-bold">BACKEND</h2>
         <p class="mt-4">Greenifying your media by restructuring your Backend</p>
@@ -295,23 +301,25 @@
 
     <!-- Footer -->
     <footer
-      class="bg-(image:<>) mt-40 flex flex-col items-center justify-center p-20 text-center bg-green-400"
+      class="bg-[url(/Images/footer-bg.jpg)] mt-40 flex flex-col items-center justify-center p-20 text-center bg-green-400 min-h-screen bg-cover bg-fixed text-white"
     >
-      <h3>Join our Greenie Newsletter</h3>
-      <div class="input-info">
+      <h3 class="text-xl md:text-2xl lg:text-3xl font-bold">
+        Join our Greenie Newsletter
+      </h3>
+      <div class="flex items-center mt-10 text-lg">
         <input
           type="email"
           id="email"
           name="email"
           placeholder="Enter email address"
-          class="w-[200px] p-[6px] rounded-l-[15px] border-1 border-solid"
+          class="py-3 px-4 bg-gray-400/20 rounded-l-3xl"
         />
         <button
           id="subalert"
           type="submit"
-          class="mt-12 w-[120px] p-[6px] rounded-r-[15px] border-1 border-solid"
+          class="rounded-r-3xl bg-green-700/70 py-3 px-4 hover:bg-green-700 cursor-pointer transition duration-300"
         >
-          <b>SUBSCRIBE</b>
+          <span class="">SUBSCRIBE</span>
         </button>
       </div>
 
