@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- fontawesome 4.7.0  -->
     <link
       rel="stylesheet"
@@ -14,77 +17,141 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-<title>Greenie Web</title>
-</head>
+    <title>Greenie Web</title>
+  </head>
 
-
-<body class="lg:p-0">
-
-<!-- NavBar -->
- <div class="w-full">
-    <nav class="bg-white p-4 border border-t-0 border-x-0">
+  <body class="lg:p-0">
+    <!-- NavBar -->
+    <div class="w-full">
+      <nav class="bg-white p-4 border border-t-0 border-x-0">
         <div class="container mx-auto flex items-center justify-between">
-            <div class="text-green-400 text-[20px] font-bold cursor-pointer">Green Web</div>
+          <div class="text-green-400 text-[20px] font-bold cursor-pointer">
+            Green Web
+          </div>
 
-            <div class="space-x-8">
-                <a href="">OUR WORK</a>
-                <a href="">ABOUT US</a>
-                <a href="">IMPORTANCE OF GREENIFYING</a>
-                <a href="">HOW DOES IT WORKS</a>
-                <button class="border p-1 w-[160px] cursor-pointer hover:bg-green-900 hover:text-white">REQUEST DEMO</button>
-            </div>
+          <div class="space-x-8">
+            <a href="">OUR WORK</a>
+            <a href="">ABOUT US</a>
+            <a href="">IMPORTANCE OF GREENIFYING</a>
+            <a href="">HOW DOES IT WORKS</a>
+            <button
+              class="border p-1 w-[160px] cursor-pointer hover:bg-green-900 hover:text-white"
+            >
+              REQUEST DEMO
+            </button>
+          </div>
         </div>
-    </nav>
-</div>
-
-
-<!-- Request Demo -->
-<section>
-    <div class="grid grid-cols-1 md:grid-cols-3 p-20 gap-20">
-        <div>
-            <h2 class="text-center mb-6 text-2xl">Request a Demo</h2>
-            <img src="Images/Request demo.png" alt="Request Demo">
-        </div>
-
-        <div>
-            <form action="">
-                <label for="name" class="font-bold">First Name</label><br>
-                <input type="text" id="name" name="firstname" placeholder="Your first name" required class="border border-gray-400 w-55 my-2 p-1 rounded-[6px]">
-
-                <label for="email" class="font-bold">Work Email</label><br>
-                <input type="email" id="email" name="email" placeholder="example@company.com" required class="border border-gray-400 my-2 w-55 p-1 rounded-[6px]">
-
-                <label for="country" class="font-bold">Country</label><br>
-                <input type="name" id="country" name="country" placeholder="Your Country" class="border border-gray-400 w-55 my-2 p-1 rounded-[6px]">
-
-                <label for="department" class="font-bold">Department</label><br>
-                <input type="name" id="department" name="department" placeholder="Please select one" class="border border-gray-400 w-55 my-2 p-1 rounded-[6px]">
-            </form>
-            <div>
-                <p class="text-red-600">Fields marked with an asterisk (*) are required.</p>
-                <button class="p-2 w-36 mt-4 rounded-[5px] bg-green-700 hover:cursor-pointer hover:bg-green-900 hover:text-white">Sign Up</button>
-            </div>
-        </div>
-        
-
-        <div>
-            <form action="">
-                <label for="name" class="font-bold">Last Name</label><br>
-                <input type="text" id="name" name="lastname" placeholder="Your last name" class="border border-gray-400 my-2 w-55 p-1 rounded-[6px]">
-
-                <label for="phone" class="font-bold">Phone Number</label><br>
-                <input type="tel" id="phone" name="phone" placeholder="(555) 555-555" class="border border-gray-400 w-55 my-2 p-1 rounded-[6px]">
-
-                <label for="company" class="font-bold">Company</label><br>
-                <input type="name" id="company" name="company" placeholder="Your Company Name" required class="border border-gray-400 my-2 w-55 p-1 rounded-[6px]">
-
-                <label for="role" class="font-bold">Role</label><br>
-                <input type="name" id="role" name="role" placeholder="Please select one" class="border border-gray-400 w-55 my-2 p-1 rounded-[6px]">
-            </form>
-        </div>
+      </nav>
     </div>
-</section>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</body>
+    <!-- Request Demo -->
+    <section>
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 max-w-[90vw] lg:max-w-[75vw] mx-auto items-center mt-30"
+      >
+        <div class="">
+          <h2 class="text-center mb-6 text-2xl">Request a Demo</h2>
+          <img
+            src="Images/Request demo.png"
+            alt="Request Demo"
+            class="w-full md:w-80 mx-auto"
+          />
+        </div>
+
+        <form action="" class="grid md:grid-cols-2 md:gap-12 justify-center">
+          <div>
+            <label for="name" class="font-bold block">First Name</label>
+            <input
+              type="text"
+              id="name"
+              name="firstname"
+              placeholder="Your first name"
+              required
+              class="border border-gray-400 w-full my-2 p-1 rounded-[6px]"
+            />
+
+            <label for="email" class="font-bold block">Work Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@company.com"
+              required
+              class="border border-gray-400 my-2 w-full p-1 rounded-[6px]"
+            />
+
+            <label for="country" class="font-bold block">Country</label>
+            <input
+              type="name"
+              id="country"
+              name="country"
+              placeholder="Your Country"
+              class="border border-gray-400 w-full my-2 p-1 rounded-[6px]"
+            />
+
+            <label for="department" class="font-bold block">Department</label>
+            <input
+              type="name"
+              id="department"
+              name="department"
+              placeholder="Please select one"
+              class="border border-gray-400 w-full my-2 p-1 rounded-[6px]"
+            />
+          </div>
+
+          <div>
+            <label for="name" class="font-bold block">Last Name</label>
+            <input
+              type="text"
+              id="name"
+              name="lastname"
+              placeholder="Your last name"
+              class="border border-gray-400 my-2 w-full p-1 rounded-[6px]"
+            />
+
+            <label for="phone" class="font-bold block">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="(555) 555-555"
+              class="border border-gray-400 w-full my-2 p-1 rounded-[6px]"
+            />
+
+            <label for="company" class="font-bold block">Company</label>
+            <input
+              type="name"
+              id="company"
+              name="company"
+              placeholder="Your Company Name"
+              required
+              class="border border-gray-400 my-2 w-full p-1 rounded-[6px]"
+            />
+
+            <label for="role" class="font-bold block">Role</label>
+            <input
+              type="name"
+              id="role"
+              name="role"
+              placeholder="Please select one"
+              class="border border-gray-400 w-full my-2 p-1 rounded-[6px]"
+            />
+          </div>
+
+          <div>
+            <p class="text-red-600">
+              Fields marked with an asterisk (*) are required.
+            </p>
+            <button
+              class="p-2 w-36 mt-4 rounded-[5px] bg-green-700 hover:cursor-pointer hover:bg-green-900 hover:text-white"
+            >
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
 </html>
