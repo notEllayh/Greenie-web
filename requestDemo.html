@@ -17,6 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <title>Greenie Web</title>
   </head>
 
@@ -69,11 +73,7 @@
     </aside>
     -->
 
-
-    <hr class="mt-5 md:hidden">
-    
-
-
+    <hr class="mt-5 md:hidden" />
 
     <!-- Request Demo -->
     <section>
@@ -89,7 +89,7 @@
           />
         </div>
 
-        <form action="" class="grid md:grid-cols-2 md:gap-12 justify-center">
+        <form action="" class="grid md:grid-cols-2 md:gap-4 justify-center">
           <div>
             <label for="name" class="font-bold block">First Name</label>
             <input
@@ -98,34 +98,6 @@
               name="firstname"
               placeholder="Your first name"
               required
-              class="border border-gray-400 w-full my-2 p-1 rounded-[6px]"
-            />
-
-            <label for="email" class="font-bold block">Work Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="example@company.com"
-              required
-              class="border border-gray-400 my-2 w-full p-1 rounded-[6px]"
-            />
-
-            <label for="country" class="font-bold block">Country</label>
-            <input
-              type="name"
-              id="country"
-              name="country"
-              placeholder="Your Country"
-              class="border border-gray-400 w-full my-2 p-1 rounded-[6px]"
-            />
-
-            <label for="department" class="font-bold block">Department</label>
-            <input
-              type="name"
-              id="department"
-              name="department"
-              placeholder="Please select one"
               class="border border-gray-400 w-full my-2 p-1 rounded-[6px]"
             />
           </div>
@@ -139,7 +111,19 @@
               placeholder="Your last name"
               class="border border-gray-400 my-2 w-full p-1 rounded-[6px]"
             />
-
+          </div>
+          <div>
+            <label for="email" class="font-bold block">Work Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@company.com"
+              required
+              class="border border-gray-400 my-2 w-full p-1 rounded-[6px]"
+            />
+          </div>
+          <div>
             <label for="phone" class="font-bold block">Phone Number</label>
             <input
               type="tel"
@@ -148,20 +132,49 @@
               placeholder="(555) 555-555"
               class="border border-gray-400 w-full my-2 p-1 rounded-[6px]"
             />
-
+          </div>
+          <div>
+            <label for="country" class="font-bold block">Country</label>
+            <input
+              type="text"
+              id="country"
+              name="country"
+              placeholder="Your Country"
+              class="border border-gray-400 w-full my-2 p-1 rounded-[6px]"
+            />
+          </div>
+          <div>
             <label for="company" class="font-bold block">Company</label>
             <input
-              type="name"
+              type="text"
               id="company"
               name="company"
               placeholder="Your Company Name"
               required
               class="border border-gray-400 my-2 w-full p-1 rounded-[6px]"
             />
+          </div>
+          <div>
+            <label for="department" class="font-bold block">Department</label>
+            <select
+              name=""
+              id=""
+              class="border border-gray-400 w-full my-2 p-1 rounded-[6px]"
+            >
+              <option value="Please click to choose" disabled selected>
+                Please Select One
+              </option>
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+          </div>
 
+          <div>
             <label for="role" class="font-bold block">Role</label>
             <input
-              type="name"
+              type="text"
               id="role"
               name="role"
               placeholder="Please select one"
@@ -183,7 +196,63 @@
       </div>
     </section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Slider main container -->
+    <!-- <div class="swiper"> -->
+    <!-- Additional required wrapper -->
+    <!-- <div class="swiper-wrapper"> -->
+    <!-- Slides -->
+    <!-- <div class="swiper-slide">
+          <img src="./Images/about us greenie.png" alt="" class="w-80" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./Images/cargo-ship.png" alt="" class="w-80" />
+        </div>
+        <div class="swiper-slide">
+          <img src="./Images/eco-world.png" alt="" class="w-80" />
+        </div>
+        ...
+      </div> -->
+    <!-- If we need pagination -->
+    <!-- <div class="swiper-pagination"></div> -->
+
+    <!-- If we need navigation buttons -->
+    <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+
+    <!-- If we need scrollbar -->
+    <!-- <div class="swiper-scrollbar"></div> -->
+    <!-- </div> -->
+
     <script src="requestDemo.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+          delay: 500,
+          disableOnInteraction: false,
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script> -->
   </body>
 </html>
